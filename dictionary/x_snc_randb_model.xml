@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Model" max_length="40" name="x_snc_randb_model" type="collection">
+        <element label="Equipment type" max_length="32" name="equipment_type" reference="x_snc_randb_equipment_type" type="reference"/>
+        <element display="true" label="Name" max_length="200" name="name" type="string"/>
+        <index name="index">
+            <element name="equipment_type"/>
+        </index>
+    </element>
+</database>

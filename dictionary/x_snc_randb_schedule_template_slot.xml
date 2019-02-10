@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Schedule Template Slot" max_length="40" name="x_snc_randb_schedule_template_slot" type="collection">
+        <element choice="1" label="Date of the week" max_length="40" name="date_of_the_week" type="choice">
+            <choice>
+                <element label="Monday" sequence="0" value="Monday"/>
+                <element label="Tuesday" sequence="1" value="Tuesday"/>
+                <element label="Wednesday" sequence="2" value="Wednesday"/>
+                <element label="Thursday" sequence="3" value="Thursday"/>
+                <element label="Friday" sequence="4" value="Friday"/>
+                <element label="Saturday" sequence="5" value="Saturday"/>
+                <element label="Sunday" sequence="6" value="Sunday"/>
+            </choice>
+        </element>
+        <element label="End time" max_length="40" name="end_time" type="glide_time"/>
+        <element label="Start time" max_length="40" name="start_time" type="glide_time"/>
+        <element display="true" label="Title" max_length="200" name="title" type="string"/>
+    </element>
+</database>

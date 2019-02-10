@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="saturday" label="Saturday" language="en" table="x_snc_randb_schedule_template">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>saturday</element>
+            <help/>
+            <hint/>
+            <label>Saturday</label>
+            <language>en</language>
+            <name>x_snc_randb_schedule_template</name>
+            <plural>Saturdays</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 14:11:07</sys_created_on>
+            <sys_id>495e6705dbef2700f186fc1ebf9619ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Saturday</sys_name>
+            <sys_package display_value="Research and Bookings" source="x_snc_randb">4f054b01dbaf2700f186fc1ebf961964</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Research and Bookings">4f054b01dbaf2700f186fc1ebf961964</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_randb_schedule_template_saturday_en</sys_update_name>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 14:11:07</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

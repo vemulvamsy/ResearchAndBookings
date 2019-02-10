@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="reason_for_requesting" label="Reason for requesting" language="en" table="x_snc_randb_reservation">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>reason_for_requesting</element>
+            <help/>
+            <hint/>
+            <label>Reason for requesting</label>
+            <language>en</language>
+            <name>x_snc_randb_reservation</name>
+            <plural>Reason for requestings</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 17:53:04</sys_created_on>
+            <sys_id>ac21201ddb236700f186fc1ebf96194c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Reason for requesting</sys_name>
+            <sys_package display_value="Research and Bookings" source="x_snc_randb">4f054b01dbaf2700f186fc1ebf961964</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Research and Bookings">4f054b01dbaf2700f186fc1ebf961964</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_randb_reservation_reason_for_requesting_en</sys_update_name>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 17:53:04</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

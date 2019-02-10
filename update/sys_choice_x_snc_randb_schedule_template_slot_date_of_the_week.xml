@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="date_of_the_week" table="x_snc_randb_schedule_template_slot" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>date_of_the_week</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Monday</label>
+            <language>en</language>
+            <name>x_snc_randb_schedule_template_slot</name>
+            <sequence>0</sequence>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 14:25:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0b81bf45dbef2700f186fc1ebf9619fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 14:25:11</sys_updated_on>
+            <value>Monday</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>date_of_the_week</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tuesday</label>
+            <language>en</language>
+            <name>x_snc_randb_schedule_template_slot</name>
+            <sequence>1</sequence>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 14:25:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cb81bf45dbef2700f186fc1ebf9619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 14:25:11</sys_updated_on>
+            <value>Tuesday</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>date_of_the_week</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wednesday</label>
+            <language>en</language>
+            <name>x_snc_randb_schedule_template_slot</name>
+            <sequence>2</sequence>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 14:25:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8b81ff45dbef2700f186fc1ebf961900</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 14:25:11</sys_updated_on>
+            <value>Wednesday</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>date_of_the_week</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Thursday</label>
+            <language>en</language>
+            <name>x_snc_randb_schedule_template_slot</name>
+            <sequence>3</sequence>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 14:25:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4b81ff45dbef2700f186fc1ebf961901</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 14:25:11</sys_updated_on>
+            <value>Thursday</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>date_of_the_week</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Friday</label>
+            <language>en</language>
+            <name>x_snc_randb_schedule_template_slot</name>
+            <sequence>4</sequence>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 14:25:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0b81ff45dbef2700f186fc1ebf961902</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 14:25:11</sys_updated_on>
+            <value>Friday</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>date_of_the_week</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Saturday</label>
+            <language>en</language>
+            <name>x_snc_randb_schedule_template_slot</name>
+            <sequence>5</sequence>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 14:25:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c781ff45dbef2700f186fc1ebf961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 14:25:11</sys_updated_on>
+            <value>Saturday</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>date_of_the_week</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sunday</label>
+            <language>en</language>
+            <name>x_snc_randb_schedule_template_slot</name>
+            <sequence>6</sequence>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 14:25:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8781ff45dbef2700f186fc1ebf961904</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 14:25:11</sys_updated_on>
+            <value>Sunday</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>date_of_the_week</element>
+            <name>x_snc_randb_schedule_template_slot</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 14:25:11</sys_created_on>
+            <sys_id>4781bf45dbef2700f186fc1ebf9619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>date_of_the_week</sys_name>
+            <sys_package display_value="Research and Bookings" source="x_snc_randb">4f054b01dbaf2700f186fc1ebf961964</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Research and Bookings">4f054b01dbaf2700f186fc1ebf961964</sys_scope>
+            <sys_update_name>sys_choice_x_snc_randb_schedule_template_slot_date_of_the_week</sys_update_name>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 14:25:11</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

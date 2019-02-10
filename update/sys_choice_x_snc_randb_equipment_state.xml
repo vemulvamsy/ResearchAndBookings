@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_snc_randb_equipment" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In stock</label>
+            <language>en</language>
+            <name>x_snc_randb_equipment</name>
+            <sequence>0</sequence>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 12:59:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2fed1b0ddbaf2700f186fc1ebf9619bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 12:59:28</sys_updated_on>
+            <value>In stock</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In use</label>
+            <language>en</language>
+            <name>x_snc_randb_equipment</name>
+            <sequence>1</sequence>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 12:59:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e3ed1b0ddbaf2700f186fc1ebf9619be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 12:59:28</sys_updated_on>
+            <value>In use</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Consumed</label>
+            <language>en</language>
+            <name>x_snc_randb_equipment</name>
+            <sequence>2</sequence>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 12:59:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a3ed1b0ddbaf2700f186fc1ebf9619bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 12:59:28</sys_updated_on>
+            <value>Consumed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In maintenance</label>
+            <language>en</language>
+            <name>x_snc_randb_equipment</name>
+            <sequence>3</sequence>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 12:59:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>63ed1b0ddbaf2700f186fc1ebf9619c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 12:59:28</sys_updated_on>
+            <value>In maintenance</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Retired</label>
+            <language>en</language>
+            <name>x_snc_randb_equipment</name>
+            <sequence>4</sequence>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 12:59:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>23ed1b0ddbaf2700f186fc1ebf9619c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 12:59:28</sys_updated_on>
+            <value>Retired</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Missing</label>
+            <language>en</language>
+            <name>x_snc_randb_equipment</name>
+            <sequence>5</sequence>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 12:59:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>efed1b0ddbaf2700f186fc1ebf9619c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 12:59:28</sys_updated_on>
+            <value>Missing</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_snc_randb_equipment</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-09 12:59:28</sys_created_on>
+            <sys_id>6fed1b0ddbaf2700f186fc1ebf9619bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="Research and Bookings" source="x_snc_randb">4f054b01dbaf2700f186fc1ebf961964</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Research and Bookings">4f054b01dbaf2700f186fc1ebf961964</sys_scope>
+            <sys_update_name>sys_choice_x_snc_randb_equipment_state</sys_update_name>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-09 12:59:28</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

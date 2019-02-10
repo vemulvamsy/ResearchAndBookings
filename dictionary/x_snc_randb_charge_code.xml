@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Charge Code" max_length="40" name="x_snc_randb_charge_code" type="collection">
+        <element label="Approver" max_length="4000" name="approver" reference="sys_user" type="glide_list"/>
+        <element label="Assistant" max_length="32" name="assistant" reference="sys_user" type="reference"/>
+        <element display="true" label="Charge code" max_length="100" name="charge_code" type="string"/>
+        <element label="Description" max_length="500" name="description" type="string"/>
+        <element label="Vice president" max_length="32" name="vice_president" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="vice_president"/>
+        </index>
+        <index name="index2">
+            <element name="assistant"/>
+        </index>
+    </element>
+</database>

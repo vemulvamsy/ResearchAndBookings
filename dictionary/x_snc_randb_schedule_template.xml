@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Schedule Template" max_length="40" name="x_snc_randb_schedule_template" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Days to schedule" max_length="40" name="days_to_schedule" type="integer"/>
+        <element label="End time" max_length="40" name="end_time" type="glide_time"/>
+        <element label="Friday" max_length="40" name="friday" type="boolean"/>
+        <element label="Monday" max_length="40" name="monday" type="boolean"/>
+        <element choice="1" label="Reservation length" max_length="40" name="reservation_length" type="choice">
+            <choice/>
+        </element>
+        <element label="Saturday" max_length="40" name="saturday" type="boolean"/>
+        <element label="Start time" max_length="40" name="start_time" type="glide_time"/>
+        <element label="Sunday" max_length="40" name="sunday" type="boolean"/>
+        <element label="Thursday" max_length="40" name="thursday" type="boolean"/>
+        <element display="true" label="Title" max_length="200" name="title" type="string"/>
+        <element label="Tuesday" max_length="40" name="tuesday" type="boolean"/>
+        <element label="Wednesday" max_length="40" name="wednesday" type="boolean"/>
+    </element>
+</database>

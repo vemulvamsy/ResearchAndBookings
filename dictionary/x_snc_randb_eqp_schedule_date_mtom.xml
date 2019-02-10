@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Eqp Schedule Date MtoM" max_length="40" name="x_snc_randb_eqp_schedule_date_mtom" type="collection">
+        <element label="Allocated to" max_length="32" name="allocated_to" reference="x_snc_randb_reservation" type="reference"/>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Equipment" max_length="32" name="equipment" reference="x_snc_randb_equipment" type="reference"/>
+        <element label="Schedule" max_length="32" name="schedule" reference="x_snc_randb_schedule_template_slot" type="reference"/>
+        <element display="true" label="Title" max_length="200" name="title" type="string"/>
+        <index name="index">
+            <element name="schedule"/>
+        </index>
+        <index name="index2">
+            <element name="allocated_to"/>
+        </index>
+        <index name="index3">
+            <element name="equipment"/>
+        </index>
+    </element>
+</database>
