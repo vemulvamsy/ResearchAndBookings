@@ -2,14 +2,15 @@
 <database>
     <element label="Equipment" max_length="40" name="x_snc_randb_equipment" type="collection">
         <element label="Approver" max_length="32" name="approver" reference="sys_user" type="reference"/>
-        <element label="Asset Tag" max_length="100" name="asset_tag" type="string"/>
+        <element label="Asset Tag" mandatory="true" max_length="100" name="asset_tag" type="string"/>
         <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
-        <element label="Location" max_length="32" name="location" reference="cmn_location" type="reference"/>
-        <element label="Model" max_length="32" name="model" reference="x_snc_randb_model" type="reference"/>
-        <element display="true" label="Display name" max_length="300" name="name" type="string"/>
-        <element label="Owned by" max_length="32" name="owned_by" reference="sys_user" type="reference"/>
+        <element label="Location" mandatory="true" max_length="32" name="location" reference="cmn_location" type="reference"/>
+        <element label="Model" mandatory="true" max_length="32" name="model" reference="x_snc_randb_model" type="reference"/>
+        <element display="true" label="Display name" max_length="300" name="name" read_only="true" type="string"/>
+        <element label="Owned by" mandatory="true" max_length="32" name="owned_by" reference="sys_user" type="reference"/>
+        <element label="Schedule Template" mandatory="true" max_length="32" name="schedule_template" reference="x_snc_randb_schedule_template" type="reference"/>
         <element label="Serial number" max_length="100" name="serial_number" type="string"/>
-        <element choice="1" label="State" max_length="40" name="state" type="choice">
+        <element choice="1" label="State" mandatory="true" max_length="40" name="state" type="choice">
             <choice>
                 <element label="In stock" sequence="0" value="In stock"/>
                 <element label="In use" sequence="1" value="In use"/>
@@ -33,6 +34,9 @@
         </index>
         <index name="index5">
             <element name="department"/>
+        </index>
+        <index name="index6">
+            <element name="schedule_template"/>
         </index>
     </element>
 </database>

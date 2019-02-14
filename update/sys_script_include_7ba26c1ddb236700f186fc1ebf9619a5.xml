@@ -18,8 +18,8 @@ ResearchAndBookings.prototype = {
 		grlr.addQuery('date',cdate);
 		grlr.addQuery('schedule',timeSlot);
 		grlr.addQuery('equipment.model.equipment_type',eqType);
-		grlr.addQuery('allocated_to','=','');
-					  
+		grlr.addQuery('status','not reserved');
+
 		grlr.query();
 		while(grlr.next()){
 			sysids.push(grlr.equipment.location+'');
@@ -33,7 +33,7 @@ ResearchAndBookings.prototype = {
 		grer.addQuery('date',cdate);
 		grer.addQuery('schedule',timeSlot);
 		grer.addQuery('equipment.model.equipment_type',eqType);
-		grer.addQuery('allocated_to','=','');
+		grer.addQuery('status','not reserved');
 		grer.addQuery('equipment.location',loc);			  
 		grer.query();
 		while(grer.next()){
@@ -41,6 +41,144 @@ ResearchAndBookings.prototype = {
 		}
 		//sysids = this.removeDuplicatesinArray(sysids);
 		return 'sys_idIN'+sysids.join(',');
+	},
+
+	getTemplateSlotsforReservation : function(cdate,eqType){
+		var sysids = [];
+		var grer = new GlideRecord('x_snc_randb_eqp_schedule_date_mtom');
+		grer.addQuery('date',cdate);
+		grer.addQuery('equipment.model.equipment_type',eqType);
+		grer.addQuery('status','not reserved');
+				  
+		grer.query();
+		while(grer.next()){
+			sysids.push(grer.schedule+'');
+		}
+		//sysids = this.removeDuplicatesinArray(sysids);
+		return 'sys_idIN'+sysids.join(',');
+	},
+	
+	createNewMtoMRecordsForAllEquipments : function(){
+		gs.info('Testing: createNewMtoMRecordsForAllEquipments begin ');
+		var dt = new GlideDateTime();
+		dt.addDaysUTC(30);
+		var eqGr = new GlideRecord('x_snc_randb_equipment');
+		eqGr.addEncodedQuery('stateNOT INRetired,Missing^schedule_templateISNOTEMPTY');
+		eqGr.query();
+		while(eqGr.next()){
+			var template = eqGr.schedule_template+'';
+			var slots = this.getScheduleSlots(template);
+			this.generateMtoMRecords(dt,dt,eqGr.sys_id+'',slots);
+		}
+		gs.info('Testing: createNewMtoMRecordsForAllEquipments end ');
+	},
+	generateMtoMRecords : function(start,end,eqp,slots){
+		//equipment, schedule,  date, status (not reserved)	
+// 		var start = new GlideDateTime(startDate);
+// 		var end = new GlideDateTime(endDate);
+		while ((start.getNumericValue() <= end.getNumericValue())){
+			//dates.push(start.getDisplayValue());
+			gs.info('Testing: start date in SI: '+start.getDisplayValue());
+			gs.info('Testing: start date Numerical value SI: '+start.getNumericValue());
+			var day = start.getDayOfWeekUTC();
+			gs.info('Testing: start date day SI: '+start.getDisplayValue()+'::'+day);
+			var daySlots = this.getSlotsforGivenDay(slots,day);
+			for(var i=0;i<daySlots.length;i++){
+				var grMtoM = new GlideRecord('x_snc_randb_eqp_schedule_date_mtom');
+				grMtoM.initialize();
+				grMtoM.date.setDisplayValue(start);
+				grMtoM.equipment = eqp;
+				grMtoM.schedule = daySlots[i];
+				grMtoM.status = "not reserved";
+				grMtoM.insert();
+			}
+
+			start.addDaysUTC(1);
+
+
+		}
+
+	},
+	getSlotsforGivenDay : function(slots,day){
+		var dayStr = this.getDayString(day);
+		var daySlots = [];
+		//sys_idIN1bf46cd2dba32300e3d257a0cf96196a,57f46cd2dba32300e3d257a0cf96196a,17f46cd2dba32300e3d257a0cf96196b^date_of_the_week=Monday
+		var slotGr = new GlideRecord('x_snc_randb_schedule_template_slot');
+		slotGr.addEncodedQuery('sys_idIN'+slots.join(',')+'^date_of_the_week='+dayStr);
+		slotGr.query();
+		while(slotGr.next()){
+			daySlots.push(slotGr.sys_id+'');
+		}
+		return daySlots;
+	},
+	getDayString : function(day){
+		switch(day+''){
+			case '1': return 'Monday';
+			case '2': return 'Tuesday';
+			case '3': return 'Wednesday';
+			case '4': return 'Thursday';
+			case '5': return 'Friday';
+			case '6': return 'Saturday';
+			case '7': return 'Sunday';
+		}
+	},
+	getScheduleSlots : function(template){
+		gs.info('Testing: template in getScheduleSlots: '+template);
+		var slots = [];
+		var grSlots = new GlideRecord('x_snc_randb_schedule_template_slot');
+		grSlots.addQuery('schedule_template',template);
+		grSlots.query();
+		if(grSlots.getRowCount() > 0){
+			while(grSlots.next()){
+				slots.push(grSlots.sys_id+'');
+			}
+			return slots;
+		}
+		gs.info('Testing: slots in getScheduleSlots: '+slots.join(','));
+		return this.createScheduleSlots(template);
+
+
+	},
+	createScheduleSlots : function(template){
+		gs.info('Testing: template in createScheduleSlots: '+template);
+		var slots = [];
+		var tempGr = new GlideRecord('x_snc_randb_schedule_template');
+		if(tempGr.get(template)){
+			var start = tempGr.start_time.getDisplayValue();
+			var end = tempGr.end_time.getDisplayValue();
+			var hrs = parseInt(tempGr.reservation_length);
+			var days = [];
+			if(tempGr.monday == true){days.push('Monday'); }
+			if(tempGr.tuesday == true){days.push('Tuesday'); }
+			if(tempGr.wednesday == true){days.push('Wednesday'); }
+			if(tempGr.thursday == true){days.push('Thursday'); }
+			if(tempGr.friday == true){days.push('Friday'); }
+			if(tempGr.saturday == true){days.push('Saturday'); }
+			if(tempGr.sunday == true){days.push('Sunday'); }
+
+			var startSplit = start.split(':');
+			var endSplit = end.split(':');
+			for(var d=0; d<days.length;d++){ // handle days
+				var sh = parseInt(startSplit[0]);
+				var eh = parseInt(endSplit[0]);
+				var st = start;
+				for(var s=sh+hrs; s<=eh; s+=hrs){
+					var etm = s+':'+startSplit[1]+':'+startSplit[2];
+					var slot = new GlideRecord('x_snc_randb_schedule_template_slot');
+					slot.newRecord();
+					slot.start_time.setDisplayValue(st);
+					slot.end_time.setDisplayValue(etm);
+					slot.date_of_the_week = days[d];
+					slot.reservation_length = hrs;
+					slot.schedule_template = template;
+					st = etm;
+					slots.push(slot.insert());
+
+				}
+			}
+		}
+		gs.info('Testing: slots in createScheduleSlots: '+slots.join(','));
+		return slots;
 	},
 	removeDuplicatesinArray : function(arr){
 		var arrayUtil = new global.ArrayUtil();
@@ -52,13 +190,13 @@ ResearchAndBookings.prototype = {
         <sys_created_by>divyaprabha.kottam</sys_created_by>
         <sys_created_on>2019-02-09 18:01:56</sys_created_on>
         <sys_id>7ba26c1ddb236700f186fc1ebf9619a5</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>ResearchAndBookings</sys_name>
         <sys_package display_value="Research and Bookings" source="x_snc_randb">4f054b01dbaf2700f186fc1ebf961964</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Research and Bookings">4f054b01dbaf2700f186fc1ebf961964</sys_scope>
         <sys_update_name>sys_script_include_7ba26c1ddb236700f186fc1ebf9619a5</sys_update_name>
         <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-        <sys_updated_on>2019-02-09 18:40:49</sys_updated_on>
+        <sys_updated_on>2019-02-13 20:15:45</sys_updated_on>
     </sys_script_include>
 </record_update>

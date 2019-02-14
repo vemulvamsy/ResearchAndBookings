@@ -13,7 +13,18 @@
             </choice>
         </element>
         <element label="End time" max_length="40" name="end_time" type="glide_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" choice_field="reservation_length" choice_table="x_snc_randb_schedule_template" default="1" label="Reservation length" max_length="40" name="reservation_length" type="string">
+            <choice>
+                <element label="Choice 1" sequence="0" value="Choice 1"/>
+                <element label="Choice 2" sequence="1" value="Choice 2"/>
+                <element label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element label="Schedule Template" max_length="32" name="schedule_template" reference="x_snc_randb_schedule_template" type="reference"/>
         <element label="Start time" max_length="40" name="start_time" type="glide_time"/>
         <element display="true" label="Title" max_length="200" name="title" type="string"/>
+        <index name="index">
+            <element name="schedule_template"/>
+        </index>
     </element>
 </database>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>date</field>
+        <global>true</global>
+        <messages/>
+        <name>reject selected date less than today</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	var GivenDate = g_form.getValue('date');
+	var CurrentDate = new Date();
+	GivenDate = new Date(GivenDate);
+
+	if(GivenDate < CurrentDate){
+		g_form.clearValue('date');
+		g_form.showErrorBox('date','Not allowed to select past date',true);
+
+	}
+	var futureDate = new Date();
+	futureDate.setDate(futureDate.getDate()+30);
+	if(GivenDate > futureDate){
+		g_form.clearValue('date');
+		g_form.showErrorBox('date','Not allowed to select future date more than 30 days',true);
+	}
+	//Type appropriate comment here, and begin script below
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>divyaprabha.kottam</sys_created_by>
+        <sys_created_on>2019-02-13 20:01:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1f7469e6dbeb2300e3d257a0cf96199a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>reject selected date less than today</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Research and Bookings" source="x_snc_randb">4f054b01dbaf2700f186fc1ebf961964</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Research and Bookings">4f054b01dbaf2700f186fc1ebf961964</sys_scope>
+        <sys_update_name>sys_script_client_1f7469e6dbeb2300e3d257a0cf96199a</sys_update_name>
+        <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:09:40</sys_updated_on>
+        <table>x_snc_randb_reservation</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

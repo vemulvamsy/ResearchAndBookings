@@ -5,6 +5,13 @@
         <element label="Date" max_length="40" name="date" type="glide_date"/>
         <element label="Equipment" max_length="32" name="equipment" reference="x_snc_randb_equipment" type="reference"/>
         <element label="Schedule" max_length="32" name="schedule" reference="x_snc_randb_schedule_template_slot" type="reference"/>
+        <element choice="3" default="not reserved" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element label="Reserved" sequence="0" value="reserved"/>
+                <element label="Not reserved" sequence="1" value="not reserved"/>
+                <element label="Retired" sequence="2" value="retired"/>
+            </choice>
+        </element>
         <element display="true" label="Title" max_length="200" name="title" type="string"/>
         <index name="index">
             <element name="schedule"/>

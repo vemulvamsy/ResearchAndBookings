@@ -5,13 +5,13 @@
             <element>title</element>
             <position>0</position>
             <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-09 17:32:01</sys_created_on>
-            <sys_id>c85c5859db236700f186fc1ebf961989</sys_id>
+            <sys_created_on>2019-02-12 20:52:04</sys_created_on>
+            <sys_id>2bd66456dba32300e3d257a0cf961908</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_randb_eqp_schedule_date_mtom" sys_domain="global" view="Default view">445c5859db236700f186fc1ebf961951</sys_ui_section>
             <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-09 17:32:01</sys_updated_on>
+            <sys_updated_on>2019-02-12 20:52:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-09 17:32:01</sys_created_on>
-            <sys_id>405c5859db236700f186fc1ebf96198a</sys_id>
+            <sys_created_on>2019-02-12 20:52:04</sys_created_on>
+            <sys_id>abd66456dba32300e3d257a0cf961908</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_randb_eqp_schedule_date_mtom" sys_domain="global" view="Default view">445c5859db236700f186fc1ebf961951</sys_ui_section>
             <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-09 17:32:01</sys_updated_on>
+            <sys_updated_on>2019-02-12 20:52:04</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -33,13 +33,13 @@
             <element>date</element>
             <position>2</position>
             <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-09 17:32:01</sys_created_on>
-            <sys_id>c05c5859db236700f186fc1ebf96198a</sys_id>
+            <sys_created_on>2019-02-12 20:52:04</sys_created_on>
+            <sys_id>2fd66456dba32300e3d257a0cf961908</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_randb_eqp_schedule_date_mtom" sys_domain="global" view="Default view">445c5859db236700f186fc1ebf961951</sys_ui_section>
             <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-09 17:32:01</sys_updated_on>
+            <sys_updated_on>2019-02-12 20:52:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,13 +47,13 @@
             <element>allocated_to</element>
             <position>3</position>
             <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-09 17:32:01</sys_created_on>
-            <sys_id>445c5859db236700f186fc1ebf96198a</sys_id>
+            <sys_created_on>2019-02-12 20:52:04</sys_created_on>
+            <sys_id>afd66456dba32300e3d257a0cf961908</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_randb_eqp_schedule_date_mtom" sys_domain="global" view="Default view">445c5859db236700f186fc1ebf961951</sys_ui_section>
             <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-09 17:32:01</sys_updated_on>
+            <sys_updated_on>2019-02-12 20:52:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -61,13 +61,13 @@
             <element>.split</element>
             <position>4</position>
             <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-09 17:32:01</sys_created_on>
-            <sys_id>c45c5859db236700f186fc1ebf96198a</sys_id>
+            <sys_created_on>2019-02-12 20:52:04</sys_created_on>
+            <sys_id>23d66456dba32300e3d257a0cf961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_randb_eqp_schedule_date_mtom" sys_domain="global" view="Default view">445c5859db236700f186fc1ebf961951</sys_ui_section>
             <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-09 17:32:01</sys_updated_on>
+            <sys_updated_on>2019-02-12 20:52:04</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -75,13 +75,13 @@
             <element>equipment</element>
             <position>5</position>
             <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-09 17:32:01</sys_created_on>
-            <sys_id>485c5859db236700f186fc1ebf96198a</sys_id>
+            <sys_created_on>2019-02-12 20:52:04</sys_created_on>
+            <sys_id>a3d66456dba32300e3d257a0cf961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_randb_eqp_schedule_date_mtom" sys_domain="global" view="Default view">445c5859db236700f186fc1ebf961951</sys_ui_section>
             <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-09 17:32:01</sys_updated_on>
+            <sys_updated_on>2019-02-12 20:52:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -89,29 +89,29 @@
             <element>schedule</element>
             <position>6</position>
             <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-09 17:32:01</sys_created_on>
-            <sys_id>c85c5859db236700f186fc1ebf96198a</sys_id>
+            <sys_created_on>2019-02-12 20:52:04</sys_created_on>
+            <sys_id>27d66456dba32300e3d257a0cf961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_randb_eqp_schedule_date_mtom" sys_domain="global" view="Default view">445c5859db236700f186fc1ebf961951</sys_ui_section>
             <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-09 17:32:01</sys_updated_on>
+            <sys_updated_on>2019-02-12 20:52:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
+            <element>status</element>
             <position>7</position>
             <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-09 17:32:01</sys_created_on>
-            <sys_id>4c5c5859db236700f186fc1ebf96198a</sys_id>
+            <sys_created_on>2019-02-12 20:52:04</sys_created_on>
+            <sys_id>a7d66456dba32300e3d257a0cf961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_randb_eqp_schedule_date_mtom" sys_domain="global" view="Default view">445c5859db236700f186fc1ebf961951</sys_ui_section>
             <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-09 17:32:01</sys_updated_on>
+            <sys_updated_on>2019-02-12 20:52:04</sys_updated_on>
             <sys_user/>
-            <type>.end_split</type>
+            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>

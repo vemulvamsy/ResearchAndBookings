@@ -5,13 +5,13 @@
             <element>title</element>
             <position>0</position>
             <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-09 16:23:44</sys_created_on>
-            <sys_id>3facc091db236700f186fc1ebf96191f</sys_id>
+            <sys_created_on>2019-02-12 20:34:14</sys_created_on>
+            <sys_id>92c260d2dba32300e3d257a0cf961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_randb_schedule_template_slot" sys_domain="global" view="Default view">6041bf45dbef2700f186fc1ebf9619da</sys_ui_section>
             <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-09 16:23:44</sys_updated_on>
+            <sys_updated_on>2019-02-12 20:34:14</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>date_of_the_week</element>
             <position>1</position>
             <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-09 16:23:44</sys_created_on>
-            <sys_id>bfacc091db236700f186fc1ebf96191f</sys_id>
+            <sys_created_on>2019-02-12 20:34:14</sys_created_on>
+            <sys_id>16c260d2dba32300e3d257a0cf961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_randb_schedule_template_slot" sys_domain="global" view="Default view">6041bf45dbef2700f186fc1ebf9619da</sys_ui_section>
             <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-09 16:23:44</sys_updated_on>
+            <sys_updated_on>2019-02-12 20:34:14</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -33,13 +33,13 @@
             <element>start_time</element>
             <position>2</position>
             <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-09 16:23:44</sys_created_on>
-            <sys_id>33acc091db236700f186fc1ebf961920</sys_id>
+            <sys_created_on>2019-02-12 20:34:14</sys_created_on>
+            <sys_id>96c260d2dba32300e3d257a0cf961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_randb_schedule_template_slot" sys_domain="global" view="Default view">6041bf45dbef2700f186fc1ebf9619da</sys_ui_section>
             <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-09 16:23:44</sys_updated_on>
+            <sys_updated_on>2019-02-12 20:34:14</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,13 +47,41 @@
             <element>end_time</element>
             <position>3</position>
             <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-09 16:23:44</sys_created_on>
-            <sys_id>b3acc091db236700f186fc1ebf961920</sys_id>
+            <sys_created_on>2019-02-12 20:34:14</sys_created_on>
+            <sys_id>1ac260d2dba32300e3d257a0cf961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_randb_schedule_template_slot" sys_domain="global" view="Default view">6041bf45dbef2700f186fc1ebf9619da</sys_ui_section>
             <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-09 16:23:44</sys_updated_on>
+            <sys_updated_on>2019-02-12 20:34:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reservation_length</element>
+            <position>4</position>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-12 20:34:14</sys_created_on>
+            <sys_id>9ac260d2dba32300e3d257a0cf961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_randb_schedule_template_slot" sys_domain="global" view="Default view">6041bf45dbef2700f186fc1ebf9619da</sys_ui_section>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-12 20:34:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>schedule_template</element>
+            <position>5</position>
+            <sys_created_by>divyaprabha.kottam</sys_created_by>
+            <sys_created_on>2019-02-13 16:10:18</sys_created_on>
+            <sys_id>46ff682edb6b2300e3d257a0cf96191d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_randb_schedule_template_slot" sys_domain="global" view="Default view">6041bf45dbef2700f186fc1ebf9619da</sys_ui_section>
+            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+            <sys_updated_on>2019-02-13 16:10:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
