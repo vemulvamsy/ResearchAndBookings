@@ -6,38 +6,38 @@
             <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Reserved</label>
+            <label>Not Reserved</label>
             <language>en</language>
             <name>x_snc_randb_eqp_schedule_date_mtom</name>
             <sequence>0</sequence>
-            <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-12 20:52:04</sys_created_on>
+            <sys_created_by>vamshi.vemula</sys_created_by>
+            <sys_created_on>2019-02-14 17:13:26</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>23d62456dba32300e3d257a0cf9619cd</sys_id>
+            <sys_id>a4088afadb23a300e3d257a0cf96190a</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-12 20:52:04</sys_updated_on>
-            <value>reserved</value>
+            <sys_updated_by>vamshi.vemula</sys_updated_by>
+            <sys_updated_on>2019-02-14 17:13:26</sys_updated_on>
+            <value>not reserved</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Not reserved</label>
+            <label>Reserved</label>
             <language>en</language>
             <name>x_snc_randb_eqp_schedule_date_mtom</name>
             <sequence>1</sequence>
-            <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-12 20:52:04</sys_created_on>
+            <sys_created_by>vamshi.vemula</sys_created_by>
+            <sys_created_on>2019-02-14 17:13:27</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>63d62456dba32300e3d257a0cf9619ce</sys_id>
+            <sys_id>e4088afadb23a300e3d257a0cf96190b</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-12 20:52:04</sys_updated_on>
-            <value>not reserved</value>
+            <sys_updated_by>vamshi.vemula</sys_updated_by>
+            <sys_updated_on>2019-02-14 17:13:27</sys_updated_on>
+            <value>reserved</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -48,31 +48,31 @@
             <language>en</language>
             <name>x_snc_randb_eqp_schedule_date_mtom</name>
             <sequence>2</sequence>
-            <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-12 20:52:04</sys_created_on>
+            <sys_created_by>vamshi.vemula</sys_created_by>
+            <sys_created_on>2019-02-14 17:13:27</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>ebd66456dba32300e3d257a0cf961900</sys_id>
+            <sys_id>64088afadb23a300e3d257a0cf96190c</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-12 20:52:04</sys_updated_on>
+            <sys_updated_by>vamshi.vemula</sys_updated_by>
+            <sys_updated_on>2019-02-14 17:13:27</sys_updated_on>
             <value>retired</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>status</element>
             <name>x_snc_randb_eqp_schedule_date_mtom</name>
             <sys_class_name>sys_choice_set</sys_class_name>
-            <sys_created_by>divyaprabha.kottam</sys_created_by>
-            <sys_created_on>2019-02-12 20:52:04</sys_created_on>
-            <sys_id>2fd62456dba32300e3d257a0cf9619cd</sys_id>
+            <sys_created_by>vamshi.vemula</sys_created_by>
+            <sys_created_on>2019-02-14 17:13:26</sys_created_on>
+            <sys_id>a0088afadb23a300e3d257a0cf96190b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>status</sys_name>
             <sys_package display_value="Research and Bookings" source="x_snc_randb">4f054b01dbaf2700f186fc1ebf961964</sys_package>
             <sys_policy/>
             <sys_scope display_value="Research and Bookings">4f054b01dbaf2700f186fc1ebf961964</sys_scope>
             <sys_update_name>sys_choice_x_snc_randb_eqp_schedule_date_mtom_status</sys_update_name>
-            <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-            <sys_updated_on>2019-02-12 20:52:04</sys_updated_on>
+            <sys_updated_by>vamshi.vemula</sys_updated_by>
+            <sys_updated_on>2019-02-14 17:13:26</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

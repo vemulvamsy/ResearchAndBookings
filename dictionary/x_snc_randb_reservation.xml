@@ -17,6 +17,7 @@
                 <element label="Cancelled" sequence="4" value="Cancelled"/>
             </choice>
         </element>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Student" max_length="32" name="student" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element label="Time slot" mandatory="true" max_length="32" name="time_slot" reference="x_snc_randb_schedule_template_slot" reference_qual="javascript:new ResearchAndBookings().getTemplateSlotsforReservation(current.date,current. equipment_type)" type="reference" use_reference_qualifier="advanced"/>
         <element choice="1" label="Training required" mandatory="true" max_length="40" name="training_required" type="choice">
             <choice>
@@ -26,18 +27,21 @@
         </element>
         <element label="Work notes" max_length="4000" name="work_notes" type="journal"/>
         <index name="index">
-            <element name="charge_code"/>
+            <element name="student"/>
         </index>
         <index name="index2">
-            <element name="equipment"/>
+            <element name="charge_code"/>
         </index>
         <index name="index3">
-            <element name="location"/>
+            <element name="equipment"/>
         </index>
         <index name="index4">
-            <element name="equipment_type"/>
+            <element name="location"/>
         </index>
         <index name="index5">
+            <element name="equipment_type"/>
+        </index>
+        <index name="index6">
             <element name="time_slot"/>
         </index>
     </element>

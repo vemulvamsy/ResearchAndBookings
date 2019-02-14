@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Research and Bookings">4f054b01dbaf2700f186fc1ebf961964</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 17:42:00</sys_created_on>
+        <sys_id>cb8ecefedb6fe300f186fc1ebf961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GlideRecord.setWorkflow</sys_name>
+        <sys_package display_value="Research and Bookings" source="x_snc_randb">4f054b01dbaf2700f186fc1ebf961964</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Research and Bookings">4f054b01dbaf2700f186fc1ebf961964</sys_scope>
+        <sys_update_name>sys_scope_privilege_cb8ecefedb6fe300f186fc1ebf961993</sys_update_name>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 17:42:00</sys_updated_on>
+        <target_name>GlideRecord.setWorkflow</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>

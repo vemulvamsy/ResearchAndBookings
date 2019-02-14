@@ -49,7 +49,7 @@ ResearchAndBookings.prototype = {
 		grer.addQuery('date',cdate);
 		grer.addQuery('equipment.model.equipment_type',eqType);
 		grer.addQuery('status','not reserved');
-				  
+
 		grer.query();
 		while(grer.next()){
 			sysids.push(grer.schedule+'');
@@ -57,25 +57,29 @@ ResearchAndBookings.prototype = {
 		//sysids = this.removeDuplicatesinArray(sysids);
 		return 'sys_idIN'+sysids.join(',');
 	},
-	
+
 	createNewMtoMRecordsForAllEquipments : function(){
 		gs.info('Testing: createNewMtoMRecordsForAllEquipments begin ');
-		var dt = new GlideDateTime();
-		dt.addDaysUTC(30);
+		var start = new GlideDateTime();
+		start.addDaysUTC(30);
+		var end = new GlideDateTime();
+		end.addDaysUTC(30);
 		var eqGr = new GlideRecord('x_snc_randb_equipment');
 		eqGr.addEncodedQuery('stateNOT INRetired,Missing^schedule_templateISNOTEMPTY');
 		eqGr.query();
 		while(eqGr.next()){
 			var template = eqGr.schedule_template+'';
+
 			var slots = this.getScheduleSlots(template);
-			this.generateMtoMRecords(dt,dt,eqGr.sys_id+'',slots);
+			gs.info("slots: "+slots.join(','));
+			this.generateMtoMRecords(start,end,eqGr.sys_id+'',slots);
 		}
 		gs.info('Testing: createNewMtoMRecordsForAllEquipments end ');
 	},
 	generateMtoMRecords : function(start,end,eqp,slots){
 		//equipment, schedule,  date, status (not reserved)	
-// 		var start = new GlideDateTime(startDate);
-// 		var end = new GlideDateTime(endDate);
+		// 		var start = new GlideDateTime(startDate);
+		// 		var end = new GlideDateTime(endDate);
 		while ((start.getNumericValue() <= end.getNumericValue())){
 			//dates.push(start.getDisplayValue());
 			gs.info('Testing: start date in SI: '+start.getDisplayValue());
@@ -83,6 +87,7 @@ ResearchAndBookings.prototype = {
 			var day = start.getDayOfWeekUTC();
 			gs.info('Testing: start date day SI: '+start.getDisplayValue()+'::'+day);
 			var daySlots = this.getSlotsforGivenDay(slots,day);
+			gs.info("day slots: "+ daySlots.join(','));
 			for(var i=0;i<daySlots.length;i++){
 				var grMtoM = new GlideRecord('x_snc_randb_eqp_schedule_date_mtom');
 				grMtoM.initialize();
@@ -184,19 +189,65 @@ ResearchAndBookings.prototype = {
 		var arrayUtil = new global.ArrayUtil();
 		return arrayUtil.unique(arr);
 	},
+	updateMtoMRecord : function(resGr){
+		var mtomGr = new GlideRecord('x_snc_randb_eqp_schedule_date_mtom');
+		mtomGr.addQuery('date',resGr.date);
+		mtomGr.addQuery('schedule',resGr.time_slot);
+		mtomGr.addQuery('equipment',resGr.equipment);
+		mtomGr.addQuery('status','not reserved');
+		mtomGr.query();
+		if(mtomGr.next()){
+			mtomGr.status = 'reserved';
+			mtomGr.allocated_to = resGr.sys_id+'';
+			mtomGr.setWorkflow(false);
+			mtomGr.update();
+		}else{
+			gs.addErrorMessage('This Equipment for the selected time slot has reserved for another student, please choose another available slot...');
+		}
+	},
+	retireOldMtoMRecords : function(){
+		var today = new GlideDateTime();
+		today.addDaysUTC(-1);
+		gs.info(today);
+		var mtom = new GlideRecord('x_snc_randb_eqp_schedule_date_mtom');
+		mtom.addQuery('date',today);
+		mtom.addQuery('status','not reserved');
+		mtom.query();
+		while(mtom.next()){
+			mtom.status = 'retired';
+			mtom.setWorkflow(false);
+			mtom.update();
+		}
+	},
+	cancelReservation : function(cur){
+		this.deAllocateMtoMRecord(cur);
+		gs.addInfoMessage('Reservation has cancelled...');
+	},
+	deAllocateMtoMRecord : function(resGr){
+		var mtomGr = new GlideRecord('x_snc_randb_eqp_schedule_date_mtom');
+		mtomGr.addQuery('allocated_to',resGr.sys_id+'');
+		
+		mtomGr.query();
+		if(mtomGr.next()){
+			mtomGr.status = 'not reserved';
+			mtomGr.allocated_to = '';
+			mtomGr.setWorkflow(false);
+			mtomGr.update();
+		} 
+	},
 	type: 'ResearchAndBookings'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>divyaprabha.kottam</sys_created_by>
         <sys_created_on>2019-02-09 18:01:56</sys_created_on>
         <sys_id>7ba26c1ddb236700f186fc1ebf9619a5</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>ResearchAndBookings</sys_name>
         <sys_package display_value="Research and Bookings" source="x_snc_randb">4f054b01dbaf2700f186fc1ebf961964</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Research and Bookings">4f054b01dbaf2700f186fc1ebf961964</sys_scope>
         <sys_update_name>sys_script_include_7ba26c1ddb236700f186fc1ebf9619a5</sys_update_name>
-        <sys_updated_by>divyaprabha.kottam</sys_updated_by>
-        <sys_updated_on>2019-02-13 20:15:45</sys_updated_on>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:28:21</sys_updated_on>
     </sys_script_include>
 </record_update>

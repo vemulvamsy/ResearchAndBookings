@@ -1,0 +1,3670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"activities":{},"subflows":[],"stages":{},"ends":["1ea95ef2db27a300e3d257a0cf961948"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition table="x_snc_randb_reservation">status=Requested for Approval^EQ<item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="Requested for Approval"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>16a95ef2db27a300e3d257a0cf961943,1aa95ef2db27a300e3d257a0cf961944,8fc91636db27a300e3d257a0cf9619f4,552c5afadb27a300e3d257a0cf9619c1,45ac127edb27a300e3d257a0cf961995,70dd1efedb27a300e3d257a0cf9619ad,cc8e9efedb27a300e3d257a0cf9619cc,e8fe1af2db67a300e3d257a0cf961909,bc1f5236db67a300e3d257a0cf96197e,1ea95ef2db27a300e3d257a0cf961948</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>16a95ef2db27a300e3d257a0cf961943,1aa95ef2db27a300e3d257a0cf961944,8fc91636db27a300e3d257a0cf9619f4,552c5afadb27a300e3d257a0cf9619c1,45ac127edb27a300e3d257a0cf961995,70dd1efedb27a300e3d257a0cf9619ad,850d12bedb27a300e3d257a0cf961908,cc8e9efedb27a300e3d257a0cf9619cc,372d9e7edb27a300e3d257a0cf96195c,e8fe1af2db67a300e3d257a0cf961909,1ea95ef2db27a300e3d257a0cf961948,bc1f5236db67a300e3d257a0cf96197e</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Reservation approval process</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">16a95ef2db27a300e3d257a0cf961943</start>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>c2a91ef2db27a300e3d257a0cf961993</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:57:12</sys_updated_on>
+        <table>x_snc_randb_reservation</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="Reservation approval process">1f33b2bddba3a700f186fc1ebf96195b</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Reservation approval process</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>divyaprabha.kottam</sys_created_by>
+        <sys_created_on>2019-02-11 17:48:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1f33b2bddba3a700f186fc1ebf96195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reservation approval process</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Research and Bookings" source="x_snc_randb">4f054b01dbaf2700f186fc1ebf961964</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Research and Bookings">4f054b01dbaf2700f186fc1ebf961964</sys_scope>
+        <sys_update_name>wf_workflow_1f33b2bddba3a700f186fc1ebf96195b</sys_update_name>
+        <sys_updated_by>divyaprabha.kottam</sys_updated_by>
+        <sys_updated_on>2019-02-11 17:48:23</sys_updated_on>
+        <table>x_snc_randb_reservation</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>16a95ef2db27a300e3d257a0cf961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Reservation approval process">c2a91ef2db27a300e3d257a0cf961993</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=16a95ef2db27a300e3d257a0cf961943"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">16a95ef2db27a300e3d257a0cf961943</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>12a95ef2db27a300e3d257a0cf961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Approval - User">35433da80a0a029a0028c639a1e51eb4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Chage code manager approval</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>45ac127edb27a300e3d257a0cf961995</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:47</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Reservation approval process">c2a91ef2db27a300e3d257a0cf961993</workflow_version>
+        <x>52</x>
+        <y>217</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=45ac127edb27a300e3d257a0cf961995"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>01ecd27edb27a300e3d257a0cf961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">502163410a6a803f0356332b24dc7945</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>05ecd27edb27a300e3d257a0cf961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a77903a7c0a8006641af7c9b1d34444e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>09ecd27edb27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a774138dc0a80066000be7af20961c7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>0decd27edb27a300e3d257a0cf961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a76b8c6ec0a800664bb14d5d8b9cd7c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>38ecd27edb27a300e3d257a0cf961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a775f59ac0a8006665d72362ae687035</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>103</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>41ecd27edb27a300e3d257a0cf961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">e37b77ac0a0004f973283ad13b341c5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>41ecd27edb27a300e3d257a0cf961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a7781cb6c0a80066147dc7a5244d5d16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>45ecd27edb27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>any</value>
+        <variable display_value="">c35e5bdd0a0a0ba96248a709f495c9ae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>49ecd27edb27a300e3d257a0cf961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a76c6257c0a8006645cff43883470e64</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>4decd27edb27a300e3d257a0cf961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">e863e3b80a0004f911d67787e77e0f16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>74ecd27edb27a300e3d257a0cf961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the approval status for this approval.  When called, the following information is available:&#13;
+//&#13;
+//    counts.total = total number of users that are part of this approval&#13;
+//    counts.approved = # of users that approved so far&#13;
+//    counts.rejected = # of users that rejected so far&#13;
+//    counts.requested = # of users that are pending approval&#13;
+//    counts.not_requested = # of users that are not pending approval&#13;
+//    counts.not_required = # of users that approval is not required&#13;
+//&#13;
+</value>
+        <variable display_value="">02c86d780a0a0b261e6a356bc893d348</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>104</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>81ecd27edb27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">e37a96e80a0004f978b47d2d6c5e0b22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>85ecd27edb27a300e3d257a0cf961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">4485eef70a6a803f6bc4bafa9e999640</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>89ecd27edb27a300e3d257a0cf961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>${charge_code.approver}</value>
+        <variable display_value="">c35e4cc40a0a0ba96248a7098ec9cb06</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>8decd27edb27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a76680b9c0a8006661b107d0f21fae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>b0ecd27edb27a300e3d257a0cf961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">02ca01820a0a0b261cf923fb95f5e1d0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>bcecd27edb27a300e3d257a0cf961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">e846198f0a0004f91fba434a514ba8b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>c1ecd27edb27a300e3d257a0cf961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a769a182c0a8006629db7fa3fc2a863d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>c5ecd27edb27a300e3d257a0cf961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a782cde9c0a8006608f39abdd85c8395</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>c9ecd27edb27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user ids and/or group ids or an array of user/group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">c35e582f0a0a0ba96248a70985207e63</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>cdecd27edb27a300e3d257a0cf961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">a7754e91c0a800664938d0ef6d2664d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>f8ecd27edb27a300e3d257a0cf961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">02c618170a0a0b26436f5c2c9f7a3901</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>fcecd27edb27a300e3d257a0cf961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a77191a4c0a800662b403f7dff5f1bbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>85ecd27edb27a300e3d257a0cf961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">4485eef70a6a803f6bc4bafa9e999640</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>45ecd27edb27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>any</value>
+        <variable display_value="">c35e5bdd0a0a0ba96248a709f495c9ae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>bcecd27edb27a300e3d257a0cf961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">e846198f0a0004f91fba434a514ba8b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>103</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>41ecd27edb27a300e3d257a0cf961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">e37b77ac0a0004f973283ad13b341c5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>104</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>81ecd27edb27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">e37a96e80a0004f978b47d2d6c5e0b22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>fcecd27edb27a300e3d257a0cf961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a77191a4c0a800662b403f7dff5f1bbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>8decd27edb27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a76680b9c0a8006661b107d0f21fae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>05ecd27edb27a300e3d257a0cf961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a77903a7c0a8006641af7c9b1d34444e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>89ecd27edb27a300e3d257a0cf961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>${charge_code.approver}</value>
+        <variable display_value="">c35e4cc40a0a0ba96248a7098ec9cb06</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>01ecd27edb27a300e3d257a0cf961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">502163410a6a803f0356332b24dc7945</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>4decd27edb27a300e3d257a0cf961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">e863e3b80a0004f911d67787e77e0f16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>09ecd27edb27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a774138dc0a80066000be7af20961c7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>cdecd27edb27a300e3d257a0cf961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">a7754e91c0a800664938d0ef6d2664d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>c1ecd27edb27a300e3d257a0cf961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a769a182c0a8006629db7fa3fc2a863d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>49ecd27edb27a300e3d257a0cf961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a76c6257c0a8006645cff43883470e64</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>0decd27edb27a300e3d257a0cf961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a76b8c6ec0a800664bb14d5d8b9cd7c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>41ecd27edb27a300e3d257a0cf961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a7781cb6c0a80066147dc7a5244d5d16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>38ecd27edb27a300e3d257a0cf961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">a775f59ac0a8006665d72362ae687035</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>f8ecd27edb27a300e3d257a0cf961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value/>
+        <variable display_value="">02c618170a0a0b26436f5c2c9f7a3901</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>c5ecd27edb27a300e3d257a0cf961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a782cde9c0a8006608f39abdd85c8395</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>74ecd27edb27a300e3d257a0cf961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the approval status for this approval.  When called, the following information is available:&#13;
+//&#13;
+//    counts.total = total number of users that are part of this approval&#13;
+//    counts.approved = # of users that approved so far&#13;
+//    counts.rejected = # of users that rejected so far&#13;
+//    counts.requested = # of users that are pending approval&#13;
+//    counts.not_requested = # of users that are not pending approval&#13;
+//    counts.not_required = # of users that approval is not required&#13;
+//&#13;
+</value>
+        <variable display_value="">02c86d780a0a0b261e6a356bc893d348</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>b0ecd27edb27a300e3d257a0cf961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">02ca01820a0a0b261cf923fb95f5e1d0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45ac127edb27a300e3d257a0cf961995</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>c9ecd27edb27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user ids and/or group ids or an array of user/group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">c35e582f0a0a0ba96248a70985207e63</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Chage code manager approval">45ac127edb27a300e3d257a0cf961995</activity>
+        <condition>activity.result == 'approved' || activity.result == 'skipped'</condition>
+        <condition_default display_value="Approved">586e1fa60a0a0b5c008121ab894f2b06</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Approved</name>
+        <order>1</order>
+        <short_description>Approval request was approved</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>09ecd27edb27a300e3d257a0cf961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Chage code manager approval">45ac127edb27a300e3d257a0cf961995</activity>
+        <condition>activity.result == 'rejected'</condition>
+        <condition_default display_value="Rejected">586e4ef60a0a0b5c00440b56c014c8a5</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Rejected</name>
+        <order>2</order>
+        <short_description>Approval request was rejected</short_description>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:40</sys_created_on>
+        <sys_id>89ecd27edb27a300e3d257a0cf961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:40</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Timer">3961a1da0a0a0b5c00ecd84822f70d85</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>detach from UI</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>1aa95ef2db27a300e3d257a0cf961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Reservation approval process">c2a91ef2db27a300e3d257a0cf961993</workflow_version>
+        <x>177</x>
+        <y>28</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=1aa95ef2db27a300e3d257a0cf961944"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>12a95ef2db27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>12a95ef2db27a300e3d257a0cf961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>16a95ef2db27a300e3d257a0cf961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>1aa95ef2db27a300e3d257a0cf961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>1ea95ef2db27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>52a95ef2db27a300e3d257a0cf961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>56a95ef2db27a300e3d257a0cf961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value>1970-01-01 00:00:02</value>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>5aa95ef2db27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>5ea95ef2db27a300e3d257a0cf961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>92a95ef2db27a300e3d257a0cf961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>9aa95ef2db27a300e3d257a0cf961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>9ea95ef2db27a300e3d257a0cf961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>d6a95ef2db27a300e3d257a0cf961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>daa95ef2db27a300e3d257a0cf961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>dea95ef2db27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>5ea95ef2db27a300e3d257a0cf961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>12a95ef2db27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>dea95ef2db27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>5aa95ef2db27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>daa95ef2db27a300e3d257a0cf961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>1aa95ef2db27a300e3d257a0cf961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>56a95ef2db27a300e3d257a0cf961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value>1970-01-01 00:00:02</value>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>16a95ef2db27a300e3d257a0cf961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>d6a95ef2db27a300e3d257a0cf961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>12a95ef2db27a300e3d257a0cf961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>1ea95ef2db27a300e3d257a0cf961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>52a95ef2db27a300e3d257a0cf961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>9aa95ef2db27a300e3d257a0cf961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>9ea95ef2db27a300e3d257a0cf961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa95ef2db27a300e3d257a0cf961944</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>92a95ef2db27a300e3d257a0cf961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="detach from UI">1aa95ef2db27a300e3d257a0cf961944</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>96a95ef2db27a300e3d257a0cf961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>1ea95ef2db27a300e3d257a0cf961948</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:57:03</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Reservation approval process">c2a91ef2db27a300e3d257a0cf961993</workflow_version>
+        <x>964</x>
+        <y>528</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=1ea95ef2db27a300e3d257a0cf961948"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Approval - User">35433da80a0a029a0028c639a1e51eb4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Equipment owner approval</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>cc8e9efedb27a300e3d257a0cf9619cc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:32</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Reservation approval process">c2a91ef2db27a300e3d257a0cf961993</workflow_version>
+        <x>600</x>
+        <y>208</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=cc8e9efedb27a300e3d257a0cf9619cc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>103</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>03ae1ab2db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">e37b77ac0a0004f973283ad13b341c5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>03ae1ab2db67a300e3d257a0cf9619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a7781cb6c0a80066147dc7a5244d5d16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>07ae1ab2db67a300e3d257a0cf9619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the approval status for this approval.  When called, the following information is available:&#13;
+//&#13;
+//    counts.total = total number of users that are part of this approval&#13;
+//    counts.approved = # of users that approved so far&#13;
+//    counts.rejected = # of users that rejected so far&#13;
+//    counts.requested = # of users that are pending approval&#13;
+//    counts.not_requested = # of users that are not pending approval&#13;
+//    counts.not_required = # of users that approval is not required&#13;
+//&#13;
+</value>
+        <variable display_value="">02c86d780a0a0b261e6a356bc893d348</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>07ae1ab2db67a300e3d257a0cf9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>any</value>
+        <variable display_value="">c35e5bdd0a0a0ba96248a709f495c9ae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>0bae1ab2db67a300e3d257a0cf9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a76c6257c0a8006645cff43883470e64</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>0fae1ab2db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">e863e3b80a0004f911d67787e77e0f16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>43ae1ab2db67a300e3d257a0cf9619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">02ca01820a0a0b261cf923fb95f5e1d0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>104</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>43ae1ab2db67a300e3d257a0cf9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">e37a96e80a0004f978b47d2d6c5e0b22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>47ae1ab2db67a300e3d257a0cf9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">4485eef70a6a803f6bc4bafa9e999640</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>4bae1ab2db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>${equipment.owned_by}</value>
+        <variable display_value="">c35e4cc40a0a0ba96248a7098ec9cb06</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>4fae1ab2db67a300e3d257a0cf9619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">e846198f0a0004f91fba434a514ba8b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>4fae1ab2db67a300e3d257a0cf9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a76680b9c0a8006661b107d0f21fae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>83ae1ab2db67a300e3d257a0cf9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a769a182c0a8006629db7fa3fc2a863d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>87ae1ab2db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a782cde9c0a8006608f39abdd85c8395</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>8bae1ab2db67a300e3d257a0cf9619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">02c618170a0a0b26436f5c2c9f7a3901</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>8bae1ab2db67a300e3d257a0cf9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user ids and/or group ids or an array of user/group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">c35e582f0a0a0ba96248a70985207e63</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>8fae1ab2db67a300e3d257a0cf9619b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a77191a4c0a800662b403f7dff5f1bbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>8fae1ab2db67a300e3d257a0cf9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">a7754e91c0a800664938d0ef6d2664d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>c3ae1ab2db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a77903a7c0a8006641af7c9b1d34444e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>c7ae1ab2db67a300e3d257a0cf9619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a775f59ac0a8006665d72362ae687035</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>c7ae1ab2db67a300e3d257a0cf9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a774138dc0a80066000be7af20961c7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>cbae1ab2db67a300e3d257a0cf9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a76b8c6ec0a800664bb14d5d8b9cd7c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>cfae1ab2db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">502163410a6a803f0356332b24dc7945</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>47ae1ab2db67a300e3d257a0cf9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">4485eef70a6a803f6bc4bafa9e999640</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>07ae1ab2db67a300e3d257a0cf9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>any</value>
+        <variable display_value="">c35e5bdd0a0a0ba96248a709f495c9ae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>4fae1ab2db67a300e3d257a0cf9619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">e846198f0a0004f91fba434a514ba8b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>103</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>03ae1ab2db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">e37b77ac0a0004f973283ad13b341c5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>104</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>43ae1ab2db67a300e3d257a0cf9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">e37a96e80a0004f978b47d2d6c5e0b22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>8fae1ab2db67a300e3d257a0cf9619b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a77191a4c0a800662b403f7dff5f1bbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>4fae1ab2db67a300e3d257a0cf9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a76680b9c0a8006661b107d0f21fae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>c3ae1ab2db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a77903a7c0a8006641af7c9b1d34444e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>4bae1ab2db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>${equipment.owned_by}</value>
+        <variable display_value="">c35e4cc40a0a0ba96248a7098ec9cb06</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>cfae1ab2db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">502163410a6a803f0356332b24dc7945</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>0fae1ab2db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">e863e3b80a0004f911d67787e77e0f16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>8fae1ab2db67a300e3d257a0cf9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">a7754e91c0a800664938d0ef6d2664d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>c7ae1ab2db67a300e3d257a0cf9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a774138dc0a80066000be7af20961c7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>83ae1ab2db67a300e3d257a0cf9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a769a182c0a8006629db7fa3fc2a863d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>0bae1ab2db67a300e3d257a0cf9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a76c6257c0a8006645cff43883470e64</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>cbae1ab2db67a300e3d257a0cf9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a76b8c6ec0a800664bb14d5d8b9cd7c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>03ae1ab2db67a300e3d257a0cf9619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a7781cb6c0a80066147dc7a5244d5d16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>c7ae1ab2db67a300e3d257a0cf9619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">a775f59ac0a8006665d72362ae687035</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>8bae1ab2db67a300e3d257a0cf9619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value/>
+        <variable display_value="">02c618170a0a0b26436f5c2c9f7a3901</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>87ae1ab2db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a782cde9c0a8006608f39abdd85c8395</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>07ae1ab2db67a300e3d257a0cf9619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the approval status for this approval.  When called, the following information is available:&#13;
+//&#13;
+//    counts.total = total number of users that are part of this approval&#13;
+//    counts.approved = # of users that approved so far&#13;
+//    counts.rejected = # of users that rejected so far&#13;
+//    counts.requested = # of users that are pending approval&#13;
+//    counts.not_requested = # of users that are not pending approval&#13;
+//    counts.not_required = # of users that approval is not required&#13;
+//&#13;
+</value>
+        <variable display_value="">02c86d780a0a0b261e6a356bc893d348</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>43ae1ab2db67a300e3d257a0cf9619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">02ca01820a0a0b261cf923fb95f5e1d0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc8e9efedb27a300e3d257a0cf9619cc</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>8bae1ab2db67a300e3d257a0cf9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user ids and/or group ids or an array of user/group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">c35e582f0a0a0ba96248a70985207e63</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Equipment owner approval">cc8e9efedb27a300e3d257a0cf9619cc</activity>
+        <condition>activity.result == 'approved' || activity.result == 'skipped'</condition>
+        <condition_default display_value="Approved">586e1fa60a0a0b5c008121ab894f2b06</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Approved</name>
+        <order>1</order>
+        <short_description>Approval request was approved</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>47ae1ab2db67a300e3d257a0cf9619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Equipment owner approval">cc8e9efedb27a300e3d257a0cf9619cc</activity>
+        <condition>activity.result == 'rejected'</condition>
+        <condition_default display_value="Rejected">586e4ef60a0a0b5c00440b56c014c8a5</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Rejected</name>
+        <order>2</order>
+        <short_description>Approval request was rejected</short_description>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:27</sys_created_on>
+        <sys_id>c7ae1ab2db67a300e3d257a0cf9619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:27</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Notification to equipment owner</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:51:19</sys_created_on>
+        <sys_id>70dd1efedb27a300e3d257a0cf9619ad</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:51:27</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Reservation approval process">c2a91ef2db27a300e3d257a0cf961993</workflow_version>
+        <x>366</x>
+        <y>208</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=70dd1efedb27a300e3d257a0cf9619ad"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dd1efedb27a300e3d257a0cf9619ad</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:51:19</sys_created_on>
+        <sys_id>2a6e9efedb27a300e3d257a0cf9619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:51:19</sys_updated_on>
+        <value>Dear  ${equipment.owned_by},&#13;
+&#13;
+Equipment reservation request has created, please find the below details:&#13;
+&#13;
+Number: ${number}&#13;
+Equipment name: ${equipment.name},&#13;
+Location Full name: ${location.full_name}&#13;
+Reason for requesting: ${reason_for_requesting}&#13;
+Date: ${date}&#13;
+Student Name: ${student.name}&#13;
+Training required: ${training_required}&#13;
+Time slot Title: ${time_slot.title}&#13;
+&#13;
+Thanks,&#13;
+--Auto user--&#13;
+</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dd1efedb27a300e3d257a0cf9619ad</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:51:19</sys_created_on>
+        <sys_id>2e6e9efedb27a300e3d257a0cf9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:51:19</sys_updated_on>
+        <value>${equipment.owned_by}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dd1efedb27a300e3d257a0cf9619ad</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:51:19</sys_created_on>
+        <sys_id>666e9efedb27a300e3d257a0cf9619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:51:19</sys_updated_on>
+        <value>Request has created for the equipment: ${equipment.name}</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dd1efedb27a300e3d257a0cf9619ad</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:51:19</sys_created_on>
+        <sys_id>a26e9efedb27a300e3d257a0cf9619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:51:19</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dd1efedb27a300e3d257a0cf9619ad</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:51:19</sys_created_on>
+        <sys_id>ea6e9efedb27a300e3d257a0cf9619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:51:19</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dd1efedb27a300e3d257a0cf9619ad</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:51:19</sys_created_on>
+        <sys_id>ee6e9efedb27a300e3d257a0cf9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:51:19</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dd1efedb27a300e3d257a0cf9619ad</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:51:19</sys_created_on>
+        <sys_id>2e6e9efedb27a300e3d257a0cf9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:51:19</sys_updated_on>
+        <value>${equipment.owned_by}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dd1efedb27a300e3d257a0cf9619ad</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:51:19</sys_created_on>
+        <sys_id>ea6e9efedb27a300e3d257a0cf9619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:51:19</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dd1efedb27a300e3d257a0cf9619ad</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:51:19</sys_created_on>
+        <sys_id>666e9efedb27a300e3d257a0cf9619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:51:19</sys_updated_on>
+        <value>Request has created for the equipment: ${equipment.name}</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dd1efedb27a300e3d257a0cf9619ad</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:51:19</sys_created_on>
+        <sys_id>2a6e9efedb27a300e3d257a0cf9619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:51:19</sys_updated_on>
+        <value>Dear  ${equipment.owned_by},&#13;
+&#13;
+Equipment reservation request has created, please find the below details:&#13;
+&#13;
+Number: ${number}&#13;
+Equipment name: ${equipment.name},&#13;
+Location Full name: ${location.full_name}&#13;
+Reason for requesting: ${reason_for_requesting}&#13;
+Date: ${date}&#13;
+Student Name: ${student.name}&#13;
+Training required: ${training_required}&#13;
+Time slot Title: ${time_slot.title}&#13;
+&#13;
+Thanks,&#13;
+--Auto user--&#13;
+</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dd1efedb27a300e3d257a0cf9619ad</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:51:19</sys_created_on>
+        <sys_id>ee6e9efedb27a300e3d257a0cf9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:51:19</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dd1efedb27a300e3d257a0cf9619ad</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:51:19</sys_created_on>
+        <sys_id>a26e9efedb27a300e3d257a0cf9619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:51:19</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Notification to equipment owner">70dd1efedb27a300e3d257a0cf9619ad</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:51:20</sys_created_on>
+        <sys_id>226e9efedb27a300e3d257a0cf9619cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:51:20</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>12</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Notification to student </name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:55:59</sys_created_on>
+        <sys_id>bc1f5236db67a300e3d257a0cf96197e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:57:00</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Reservation approval process">c2a91ef2db27a300e3d257a0cf961993</workflow_version>
+        <x>1075</x>
+        <y>329</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=bc1f5236db67a300e3d257a0cf96197e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bc1f5236db67a300e3d257a0cf96197e</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:55:59</sys_created_on>
+        <sys_id>327fd636db67a300e3d257a0cf9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:55:59</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bc1f5236db67a300e3d257a0cf96197e</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:55:59</sys_created_on>
+        <sys_id>367fd636db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:55:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bc1f5236db67a300e3d257a0cf96197e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:55:59</sys_created_on>
+        <sys_id>727fd636db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:55:59</sys_updated_on>
+        <value>${student}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bc1f5236db67a300e3d257a0cf96197e</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:55:59</sys_created_on>
+        <sys_id>7e7fd636db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:56:51</sys_updated_on>
+        <value>Dear  ${student.name},&#13;
+&#13;
+Your reservation request has Approved, please find the below reservation request details:&#13;
+&#13;
+Number: ${number}&#13;
+Equipment name: ${equipment.name},&#13;
+Location Full name: ${location.full_name}&#13;
+Reason for requesting: ${reason_for_requesting}&#13;
+Date: ${date}&#13;
+Student Name: ${student.name}&#13;
+Training required: ${training_required}&#13;
+Time slot Title: ${time_slot.title}&#13;
+&#13;
+Thanks,&#13;
+--Auto user--</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bc1f5236db67a300e3d257a0cf96197e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:55:59</sys_created_on>
+        <sys_id>ba7fd636db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:55:59</sys_updated_on>
+        <value>Reservation request  ${number} has approved.</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bc1f5236db67a300e3d257a0cf96197e</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:55:59</sys_created_on>
+        <sys_id>f67fd636db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:55:59</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bc1f5236db67a300e3d257a0cf96197e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:55:59</sys_created_on>
+        <sys_id>727fd636db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:55:59</sys_updated_on>
+        <value>${student}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bc1f5236db67a300e3d257a0cf96197e</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:55:59</sys_created_on>
+        <sys_id>327fd636db67a300e3d257a0cf9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:55:59</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bc1f5236db67a300e3d257a0cf96197e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:55:59</sys_created_on>
+        <sys_id>ba7fd636db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:55:59</sys_updated_on>
+        <value>Reservation request  ${number} has approved.</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bc1f5236db67a300e3d257a0cf96197e</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:55:59</sys_created_on>
+        <sys_id>7e7fd636db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:56:51</sys_updated_on>
+        <value>Dear  ${student.name},&#13;
+&#13;
+Your reservation request has Approved, please find the below reservation request details:&#13;
+&#13;
+Number: ${number}&#13;
+Equipment name: ${equipment.name},&#13;
+Location Full name: ${location.full_name}&#13;
+Reason for requesting: ${reason_for_requesting}&#13;
+Date: ${date}&#13;
+Student Name: ${student.name}&#13;
+Training required: ${training_required}&#13;
+Time slot Title: ${time_slot.title}&#13;
+&#13;
+Thanks,&#13;
+--Auto user--</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bc1f5236db67a300e3d257a0cf96197e</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:55:59</sys_created_on>
+        <sys_id>367fd636db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:55:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bc1f5236db67a300e3d257a0cf96197e</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:55:59</sys_created_on>
+        <sys_id>f67fd636db67a300e3d257a0cf9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:55:59</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Notification to student ">bc1f5236db67a300e3d257a0cf96197e</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:55:59</sys_created_on>
+        <sys_id>767fd636db67a300e3d257a0cf9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:55:59</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Notification to the student</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:43:25</sys_created_on>
+        <sys_id>552c5afadb27a300e3d257a0cf9619c1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:43:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Reservation approval process">c2a91ef2db27a300e3d257a0cf961993</workflow_version>
+        <x>719</x>
+        <y>103</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=552c5afadb27a300e3d257a0cf9619c1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>552c5afadb27a300e3d257a0cf9619c1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:43:25</sys_created_on>
+        <sys_id>229cde3edb27a300e3d257a0cf9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:43:25</sys_updated_on>
+        <value>${student}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>552c5afadb27a300e3d257a0cf9619c1</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:43:25</sys_created_on>
+        <sys_id>2e9cde3edb27a300e3d257a0cf9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:43:25</sys_updated_on>
+        <value>Dear  ${student.name},&#13;
+&#13;
+Your reservation request has created, please find the below details:&#13;
+&#13;
+Number: ${number}&#13;
+Equipment name: ${equipment.name},&#13;
+Location Full name: ${location.full_name}&#13;
+Reason for requesting: ${reason_for_requesting}&#13;
+Date: ${date}&#13;
+Student Name: ${student.name}&#13;
+Training required: ${training_required}&#13;
+Time slot Title: ${time_slot.title}&#13;
+&#13;
+Thanks,&#13;
+--Auto user--</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>552c5afadb27a300e3d257a0cf9619c1</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:43:25</sys_created_on>
+        <sys_id>6a9cde3edb27a300e3d257a0cf9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:43:25</sys_updated_on>
+        <value>Reservation Request Number: ${number}</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>552c5afadb27a300e3d257a0cf9619c1</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:43:25</sys_created_on>
+        <sys_id>a69cde3edb27a300e3d257a0cf9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:43:25</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>552c5afadb27a300e3d257a0cf9619c1</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:43:25</sys_created_on>
+        <sys_id>e29cde3edb27a300e3d257a0cf9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:43:25</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>552c5afadb27a300e3d257a0cf9619c1</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:43:25</sys_created_on>
+        <sys_id>ee9cde3edb27a300e3d257a0cf9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:43:25</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>552c5afadb27a300e3d257a0cf9619c1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:43:25</sys_created_on>
+        <sys_id>229cde3edb27a300e3d257a0cf9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:43:25</sys_updated_on>
+        <value>${student}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>552c5afadb27a300e3d257a0cf9619c1</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:43:25</sys_created_on>
+        <sys_id>ee9cde3edb27a300e3d257a0cf9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:43:25</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>552c5afadb27a300e3d257a0cf9619c1</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:43:25</sys_created_on>
+        <sys_id>6a9cde3edb27a300e3d257a0cf9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:43:25</sys_updated_on>
+        <value>Reservation Request Number: ${number}</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>552c5afadb27a300e3d257a0cf9619c1</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:43:25</sys_created_on>
+        <sys_id>2e9cde3edb27a300e3d257a0cf9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:43:25</sys_updated_on>
+        <value>Dear  ${student.name},&#13;
+&#13;
+Your reservation request has created, please find the below details:&#13;
+&#13;
+Number: ${number}&#13;
+Equipment name: ${equipment.name},&#13;
+Location Full name: ${location.full_name}&#13;
+Reason for requesting: ${reason_for_requesting}&#13;
+Date: ${date}&#13;
+Student Name: ${student.name}&#13;
+Training required: ${training_required}&#13;
+Time slot Title: ${time_slot.title}&#13;
+&#13;
+Thanks,&#13;
+--Auto user--</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>552c5afadb27a300e3d257a0cf9619c1</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:43:25</sys_created_on>
+        <sys_id>e29cde3edb27a300e3d257a0cf9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:43:25</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>552c5afadb27a300e3d257a0cf9619c1</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:43:25</sys_created_on>
+        <sys_id>a69cde3edb27a300e3d257a0cf9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:43:25</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Notification to the student">552c5afadb27a300e3d257a0cf9619c1</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:43:25</sys_created_on>
+        <sys_id>269cde3edb27a300e3d257a0cf9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:43:25</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Reservation cancelled</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:47:10</sys_created_on>
+        <sys_id>372d9e7edb27a300e3d257a0cf96195c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:53:09</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Reservation approval process">c2a91ef2db27a300e3d257a0cf961993</workflow_version>
+        <x>288</x>
+        <y>333</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=372d9e7edb27a300e3d257a0cf96195c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>372d9e7edb27a300e3d257a0cf96195c</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:47:10</sys_created_on>
+        <sys_id>217d5afedb27a300e3d257a0cf961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:47:10</sys_updated_on>
+        <value>Reservation  ${number} has rejected by chargecode manager</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>372d9e7edb27a300e3d257a0cf96195c</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:47:10</sys_created_on>
+        <sys_id>217d9e7edb27a300e3d257a0cf961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:47:10</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>372d9e7edb27a300e3d257a0cf96195c</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:47:10</sys_created_on>
+        <sys_id>6d7d5afedb27a300e3d257a0cf961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:47:10</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>372d9e7edb27a300e3d257a0cf96195c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:47:10</sys_created_on>
+        <sys_id>6d7d9e7edb27a300e3d257a0cf961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:47:10</sys_updated_on>
+        <value>${student}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>372d9e7edb27a300e3d257a0cf96195c</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:47:10</sys_created_on>
+        <sys_id>a57d5afedb27a300e3d257a0cf961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:47:10</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>372d9e7edb27a300e3d257a0cf96195c</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:47:10</sys_created_on>
+        <sys_id>e17d5afedb27a300e3d257a0cf961992</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:53:09</sys_updated_on>
+        <value>Dear  ${student.name},&#13;
+&#13;
+Your reservation request has rejected, please find the below reservation request details:&#13;
+&#13;
+Number: ${number}&#13;
+Equipment name: ${equipment.name},&#13;
+Location Full name: ${location.full_name}&#13;
+Reason for requesting: ${reason_for_requesting}&#13;
+Date: ${date}&#13;
+Student Name: ${student.name}&#13;
+Training required: ${training_required}&#13;
+Time slot Title: ${time_slot.title}&#13;
+&#13;
+Thanks,&#13;
+--Auto user--</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>372d9e7edb27a300e3d257a0cf96195c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:47:10</sys_created_on>
+        <sys_id>6d7d9e7edb27a300e3d257a0cf961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:47:10</sys_updated_on>
+        <value>${student}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>372d9e7edb27a300e3d257a0cf96195c</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:47:10</sys_created_on>
+        <sys_id>a57d5afedb27a300e3d257a0cf961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:47:10</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>372d9e7edb27a300e3d257a0cf96195c</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:47:10</sys_created_on>
+        <sys_id>217d5afedb27a300e3d257a0cf961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:47:10</sys_updated_on>
+        <value>Reservation  ${number} has rejected by chargecode manager</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>372d9e7edb27a300e3d257a0cf96195c</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:47:10</sys_created_on>
+        <sys_id>e17d5afedb27a300e3d257a0cf961992</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:53:09</sys_updated_on>
+        <value>Dear  ${student.name},&#13;
+&#13;
+Your reservation request has rejected, please find the below reservation request details:&#13;
+&#13;
+Number: ${number}&#13;
+Equipment name: ${equipment.name},&#13;
+Location Full name: ${location.full_name}&#13;
+Reason for requesting: ${reason_for_requesting}&#13;
+Date: ${date}&#13;
+Student Name: ${student.name}&#13;
+Training required: ${training_required}&#13;
+Time slot Title: ${time_slot.title}&#13;
+&#13;
+Thanks,&#13;
+--Auto user--</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>372d9e7edb27a300e3d257a0cf96195c</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:47:10</sys_created_on>
+        <sys_id>217d9e7edb27a300e3d257a0cf961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:47:10</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>372d9e7edb27a300e3d257a0cf96195c</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:47:10</sys_created_on>
+        <sys_id>6d7d5afedb27a300e3d257a0cf961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:47:10</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Reservation cancelled">372d9e7edb27a300e3d257a0cf96195c</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:47:10</sys_created_on>
+        <sys_id>e97d5afedb27a300e3d257a0cf961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:47:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Send Notification to charge code approver</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:40:59</sys_created_on>
+        <sys_id>8fc91636db27a300e3d257a0cf9619f4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:41:03</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Reservation approval process">c2a91ef2db27a300e3d257a0cf961993</workflow_version>
+        <x>476</x>
+        <y>59</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=8fc91636db27a300e3d257a0cf9619f4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8fc91636db27a300e3d257a0cf9619f4</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:40:59</sys_created_on>
+        <sys_id>0b0c523adb27a300e3d257a0cf961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:40:59</sys_updated_on>
+        <value>Reservation Request for Approval</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8fc91636db27a300e3d257a0cf9619f4</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:40:59</sys_created_on>
+        <sys_id>470c523adb27a300e3d257a0cf961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:40:59</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8fc91636db27a300e3d257a0cf9619f4</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:40:59</sys_created_on>
+        <sys_id>830c523adb27a300e3d257a0cf961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:40:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8fc91636db27a300e3d257a0cf9619f4</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:40:59</sys_created_on>
+        <sys_id>8f0c523adb27a300e3d257a0cf961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:40:59</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8fc91636db27a300e3d257a0cf9619f4</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:40:59</sys_created_on>
+        <sys_id>cb0c523adb27a300e3d257a0cf961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:40:59</sys_updated_on>
+        <value>Dear  ${charge_code.approver},&#13;
+&#13;
+Reservation request has created, please find the below details:&#13;
+&#13;
+Number: ${number}&#13;
+Equipment name: ${equipment.name},&#13;
+Location Full name: ${location.full_name}&#13;
+Reason for requesting: ${reason_for_requesting}&#13;
+Date: ${date}&#13;
+Student Name: ${student.name}&#13;
+Training required: ${training_required}&#13;
+Time slot Title: ${time_slot.title}&#13;
+&#13;
+Thanks,&#13;
+--Auto user--</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8fc91636db27a300e3d257a0cf9619f4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:40:59</sys_created_on>
+        <sys_id>cf0c523adb27a300e3d257a0cf961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:40:59</sys_updated_on>
+        <value>${charge_code.approver}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8fc91636db27a300e3d257a0cf9619f4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:40:59</sys_created_on>
+        <sys_id>cf0c523adb27a300e3d257a0cf961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:40:59</sys_updated_on>
+        <value>${charge_code.approver}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8fc91636db27a300e3d257a0cf9619f4</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:40:59</sys_created_on>
+        <sys_id>8f0c523adb27a300e3d257a0cf961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:40:59</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8fc91636db27a300e3d257a0cf9619f4</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:40:59</sys_created_on>
+        <sys_id>0b0c523adb27a300e3d257a0cf961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:40:59</sys_updated_on>
+        <value>Reservation Request for Approval</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8fc91636db27a300e3d257a0cf9619f4</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:40:59</sys_created_on>
+        <sys_id>cb0c523adb27a300e3d257a0cf961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:40:59</sys_updated_on>
+        <value>Dear  ${charge_code.approver},&#13;
+&#13;
+Reservation request has created, please find the below details:&#13;
+&#13;
+Number: ${number}&#13;
+Equipment name: ${equipment.name},&#13;
+Location Full name: ${location.full_name}&#13;
+Reason for requesting: ${reason_for_requesting}&#13;
+Date: ${date}&#13;
+Student Name: ${student.name}&#13;
+Training required: ${training_required}&#13;
+Time slot Title: ${time_slot.title}&#13;
+&#13;
+Thanks,&#13;
+--Auto user--</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8fc91636db27a300e3d257a0cf9619f4</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:40:59</sys_created_on>
+        <sys_id>830c523adb27a300e3d257a0cf961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:40:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8fc91636db27a300e3d257a0cf9619f4</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:40:59</sys_created_on>
+        <sys_id>470c523adb27a300e3d257a0cf961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:40:59</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Send Notification to charge code approver">8fc91636db27a300e3d257a0cf9619f4</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:40:59</sys_created_on>
+        <sys_id>0b0c523adb27a300e3d257a0cf961989</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:40:59</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>set reservation status to rejected</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:45:44</sys_created_on>
+        <sys_id>850d12bedb27a300e3d257a0cf961908</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:45:49</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Reservation approval process">c2a91ef2db27a300e3d257a0cf961993</workflow_version>
+        <x>40</x>
+        <y>336</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=850d12bedb27a300e3d257a0cf961908"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>850d12bedb27a300e3d257a0cf961908</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:45:44</sys_created_on>
+        <sys_id>2c2d9e7edb27a300e3d257a0cf96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:45:44</sys_updated_on>
+        <value>status=Rejected^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>850d12bedb27a300e3d257a0cf961908</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:45:44</sys_created_on>
+        <sys_id>2c2d9e7edb27a300e3d257a0cf96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:45:44</sys_updated_on>
+        <value>status=Rejected^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="set reservation status to rejected">850d12bedb27a300e3d257a0cf961908</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:45:44</sys_created_on>
+        <sys_id>e02d9e7edb27a300e3d257a0cf96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:45:44</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>11</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set status to approved</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:54:04</sys_created_on>
+        <sys_id>e8fe1af2db67a300e3d257a0cf961909</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:54:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Reservation approval process">c2a91ef2db27a300e3d257a0cf961993</workflow_version>
+        <x>862</x>
+        <y>240</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=e8fe1af2db67a300e3d257a0cf961909"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e8fe1af2db67a300e3d257a0cf961909</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:54:04</sys_created_on>
+        <sys_id>e20f1ef2db67a300e3d257a0cf9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:54:04</sys_updated_on>
+        <value>status=Approved^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e8fe1af2db67a300e3d257a0cf961909</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:54:04</sys_created_on>
+        <sys_id>e20f1ef2db67a300e3d257a0cf9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:54:04</sys_updated_on>
+        <value>status=Approved^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set status to approved">e8fe1af2db67a300e3d257a0cf961909</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:54:04</sys_created_on>
+        <sys_id>2a0f1ef2db67a300e3d257a0cf9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:54:04</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Approved">09ecd27edb27a300e3d257a0cf961946</condition>
+        <from display_value="Chage code manager approval">45ac127edb27a300e3d257a0cf961995</from>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:44</sys_created_on>
+        <sys_id>39ecde3edb27a300e3d257a0cf9619e0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:51:24</sys_updated_on>
+        <to display_value="Notification to equipment owner">70dd1efedb27a300e3d257a0cf9619ad</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">e97d5afedb27a300e3d257a0cf961992</condition>
+        <from display_value="Reservation cancelled">372d9e7edb27a300e3d257a0cf96195c</from>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:47:13</sys_created_on>
+        <sys_id>467d5afedb27a300e3d257a0cf961995</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:47:13</sys_updated_on>
+        <to display_value="End">1ea95ef2db27a300e3d257a0cf961948</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">2a0f1ef2db67a300e3d257a0cf9619c2</condition>
+        <from display_value="Set status to approved">e8fe1af2db67a300e3d257a0cf961909</from>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:54:08</sys_created_on>
+        <sys_id>570f5236db67a300e3d257a0cf96197e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:56:03</sys_updated_on>
+        <to display_value="Notification to student ">bc1f5236db67a300e3d257a0cf96197e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">269cde3edb27a300e3d257a0cf9619d7</condition>
+        <from display_value="Notification to the student">552c5afadb27a300e3d257a0cf9619c1</from>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:43:28</sys_created_on>
+        <sys_id>579c12f6db27a300e3d257a0cf961905</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:44:44</sys_updated_on>
+        <to display_value="Chage code manager approval">45ac127edb27a300e3d257a0cf961995</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">e02d9e7edb27a300e3d257a0cf96190c</condition>
+        <from display_value="set reservation status to rejected">850d12bedb27a300e3d257a0cf961908</from>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:45:48</sys_created_on>
+        <sys_id>5d2d9e7edb27a300e3d257a0cf96190e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:47:13</sys_updated_on>
+        <to display_value="Reservation cancelled">372d9e7edb27a300e3d257a0cf96195c</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">767fd636db67a300e3d257a0cf9619b9</condition>
+        <from display_value="Notification to student ">bc1f5236db67a300e3d257a0cf96197e</from>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:56:03</sys_created_on>
+        <sys_id>637f5a36db67a300e3d257a0cf9619c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:56:03</sys_updated_on>
+        <to display_value="End">1ea95ef2db27a300e3d257a0cf961948</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">0b0c523adb27a300e3d257a0cf961989</condition>
+        <from display_value="Send Notification to charge code approver">8fc91636db27a300e3d257a0cf9619f4</from>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:41:03</sys_created_on>
+        <sys_id>7b0c523adb27a300e3d257a0cf96198c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:43:28</sys_updated_on>
+        <to display_value="Notification to the student">552c5afadb27a300e3d257a0cf9619c1</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">96a95ef2db27a300e3d257a0cf961948</condition>
+        <from display_value="detach from UI">1aa95ef2db27a300e3d257a0cf961944</from>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>96a95ef2db27a300e3d257a0cf96194a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:41:03</sys_updated_on>
+        <to display_value="Send Notification to charge code approver">8fc91636db27a300e3d257a0cf9619f4</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">12a95ef2db27a300e3d257a0cf961944</condition>
+        <from display_value="Begin">16a95ef2db27a300e3d257a0cf961943</from>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>9aa95ef2db27a300e3d257a0cf96194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <to display_value="detach from UI">1aa95ef2db27a300e3d257a0cf961944</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Rejected">89ecd27edb27a300e3d257a0cf961946</condition>
+        <from display_value="Chage code manager approval">45ac127edb27a300e3d257a0cf961995</from>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:44:51</sys_created_on>
+        <sys_id>afec9e7edb27a300e3d257a0cf961957</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:45:48</sys_updated_on>
+        <to display_value="set reservation status to rejected">850d12bedb27a300e3d257a0cf961908</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Rejected">c7ae1ab2db67a300e3d257a0cf9619bb</condition>
+        <from display_value="Equipment owner approval">cc8e9efedb27a300e3d257a0cf9619cc</from>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:53:32</sys_created_on>
+        <sys_id>b2ee1af2db67a300e3d257a0cf961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:53:32</sys_updated_on>
+        <to display_value="set reservation status to rejected">850d12bedb27a300e3d257a0cf961908</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Approved">47ae1ab2db67a300e3d257a0cf9619bb</condition>
+        <from display_value="Equipment owner approval">cc8e9efedb27a300e3d257a0cf9619cc</from>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:52:31</sys_created_on>
+        <sys_id>b3ae1ab2db67a300e3d257a0cf9619bd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:54:08</sys_updated_on>
+        <to display_value="Set status to approved">e8fe1af2db67a300e3d257a0cf961909</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">226e9efedb27a300e3d257a0cf9619cb</condition>
+        <from display_value="Notification to equipment owner">70dd1efedb27a300e3d257a0cf9619ad</from>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:51:24</sys_created_on>
+        <sys_id>cb6ed6b2db67a300e3d257a0cf9619fa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:52:31</sys_updated_on>
+        <to display_value="Equipment owner approval">cc8e9efedb27a300e3d257a0cf9619cc</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>vamshi.vemula</sys_created_by>
+        <sys_created_on>2019-02-14 18:30:33</sys_created_on>
+        <sys_id>86a91ef2db27a300e3d257a0cf961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vamshi.vemula</sys_updated_by>
+        <sys_updated_on>2019-02-14 18:30:33</sys_updated_on>
+        <workflow_version display_value="Reservation approval process">c2a91ef2db27a300e3d257a0cf961993</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=1f33b2bddba3a700f186fc1ebf96195b^sys_id!=c2a91ef2db27a300e3d257a0cf961993">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>
